@@ -1,0 +1,15 @@
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "boa-tester"
+version = "0.1.0"
+description = "POC to test boa solving"
+authors = ["Data Platforms <data-platforms@flatiron.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.6.0,<4.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"

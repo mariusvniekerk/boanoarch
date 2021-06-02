@@ -1,0 +1,28 @@
+context: {}
+package:
+
+  name: boa-tester
+  version: 1.0.0
+
+source:
+  path: ../
+
+build:
+  noarch: python
+  script:
+    - python -m pip install --no-deps --ignore-installed -vv .
+
+requirements:
+  host:
+    - python >=3.6.0,<4.0
+    - pip
+    - poetry
+  run:
+    - python >=3.6.0,<4.0
+
+test:
+  requires:
+    - pytest
+  command:
+    - pytest --pyargs boa_tester
+

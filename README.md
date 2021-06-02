@@ -1,0 +1,1 @@
+Very simple reproducible case showing what is misbehaving in boa wrt noarch recipes
